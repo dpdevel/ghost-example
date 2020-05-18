@@ -69,11 +69,11 @@ if [ -z "$NODE_ENV" ]; then
 fi
 
 echo "---> Installing Ghost application ..."
-npm install ghost-cli@latest -g
+npm install ghost-cli@latest
 echo "---> Creating Ghost directory ..."
 mkdir ghost-install
 echo "---> Installing Ghost ..."
-/usr/bin/ghost install --verbose \
+node_modules/ghost-cli/bin/ghost install --verbose \
     --dir=ghost-install \
     --port=8080 --ip=0.0.0.0 \
     --db=mysql \
