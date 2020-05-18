@@ -69,7 +69,7 @@ if [ -z "$NODE_ENV" ]; then
 fi
 
 echo "---> Installing Ghost application ..."
-npm install --quiet ghost-cli@latest
+npm install ghost-cli@latest -g
 echo "---> Creating Ghost directory ..."
 mkdir ghost-install
 echo "---> Installing Ghost ..."
