@@ -73,7 +73,7 @@ npm install ghost-cli@latest -g
 echo "---> Creating Ghost directory ..."
 mkdir ghost-install
 echo "---> Installing Ghost ..."
-/usr/bin/ghost install --verbose \
+node_modules/ghost-cli/bin/ghost install --verbose \
     --dir=ghost-install \
     --port=8080 --ip=0.0.0.0 \
     --db=mysql \
@@ -83,4 +83,4 @@ echo "---> Installing Ghost ..."
     --no-stack --no-start --no-enable --no-prompt --no-setup
 
 # Remove ghost-cli node_modules to reduce image size
-rm -rf /usr/lib/node_modules
+rm -rf node_modules
