@@ -73,7 +73,7 @@ npm install ghost-cli@latest -g
 echo "---> Creating Ghost directory ..."
 mkdir ghost-install
 echo "---> Installing Ghost ..."
-/usr/lib/node_modules/ghost-cli/bin/ghost install --verbose \
+/usr/bin/ghost install --verbose \
     --dir=ghost-install \
     --port=8080 --ip=0.0.0.0 \
     --db=mysql \
